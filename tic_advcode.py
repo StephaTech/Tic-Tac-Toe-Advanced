@@ -48,7 +48,8 @@ def checker(buttons):
         click = True
         scorekeeper()
 
-def scorekeeper():  # all the possibilites of win X
+def scorekeeper():
+#################### All the possibilites of win X
     if (button1["text"] == "X" and button2["text"] == "X" and button3["text"] == "X"):
         button1.config(background="light green")
         button2.config(background="light green")
@@ -220,10 +221,7 @@ def NewGame():
     reset()
     PlayerX.set(score)
     PlayerO.set(score)
-
 ##########################END OF FUNCTIONS####################################
-
-
 
 lblPlayerX =Label(RightFrame1, font=('arial', 40, 'bold'), text="Player X :",padx=2, pady=2, bg="Cadet Blue")
 lblPlayerX.grid(row=0, column=0, sticky=W)
@@ -268,8 +266,6 @@ button8.grid(row=3, column= 1, sticky=S+N+E+W)
 
 button9 = Button(LeftFrame, text=" ", font=('Times 26 bold'), height=3, width=8, bg='gainsboro', command=lambda:checker(button9))
 button9.grid(row=3, column= 2, sticky=S+N+E+W)
-
-
 
 
 root.mainloop()#visualize the frame
