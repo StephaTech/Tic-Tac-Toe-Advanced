@@ -219,8 +219,8 @@ def reset():
 
 def NewGame():
     reset()
-    PlayerX.set(score)
-    PlayerO.set(score)
+    PlayerX.set(0)
+    PlayerO.set(0)
 ##########################END OF FUNCTIONS####################################
 
 lblPlayerX =Label(RightFrame1, font=('arial', 40, 'bold'), text="Player X :",padx=2, pady=2, bg="Cadet Blue")
